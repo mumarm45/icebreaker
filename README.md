@@ -1,7 +1,9 @@
 # Icebreaker Bot
 
 An AI-powered assistant that generates personalized icebreakers and conversation starters based on LinkedIn profiles.
-
+```
+## This project I created to learn RAG with llama-index
+```
 ## Features
 
 - **LinkedIn Profile Analysis**: Extract and analyze LinkedIn profile data
@@ -12,7 +14,7 @@ An AI-powered assistant that generates personalized icebreakers and conversation
 
 ## Requirements
 
-- Python 3.11 - 3.13
+- Python 3.12
 - Anthropic API key (for Claude LLM)
 - ProxyCurl API key (optional, for live LinkedIn data)
 
@@ -78,6 +80,8 @@ icebreaker/
     ├── data_processing.py # Profile data processing and vector DB
     └── llm_interface.py   # LLM and embedding model setup
 ```
+
+
 
 ## License
 
