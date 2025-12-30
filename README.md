@@ -26,14 +26,32 @@ An AI-powered assistant that generates personalized icebreakers and conversation
    cd icebreaker
    ```
 
-2. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies using `uv`:
    ```bash
+   uv venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   uv pip install -e .
+   ```
+   
+   Or with standard pip but you have to copy and paste the packages in requirements.txt: 
+   ```bash
+   create requirements.txt and copy the following pacakges in
+   _____________________________
+   anthropic>=0.75.0,
+   gradio>=6.2.0,
+   llama-index>=0.14.12,<0.15,
+   llama-index-llms-anthropic>=0.10.4,
+   llama-index-readers-web>=0.5.6,
+   llama-index-embeddings-voyageai>=0.3.0,
+   pydantic>=2.12.5,
+   requests>=2.32.5,
+   _____________________________
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    pip install -e .
    ```
 
-3. Create a `.env` file with your API keys:
+4. Create a `.env` file with your API keys:
    ```
    ANTHROPIC_API_KEY=your_anthropic_api_key
    PROXYCURL_API_KEY=your_proxycurl_api_key  # Optional
