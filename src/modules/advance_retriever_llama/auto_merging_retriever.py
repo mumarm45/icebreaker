@@ -1,9 +1,11 @@
 from llama_index.core.node_parser import HierarchicalNodeParser
 from llama_index.core import VectorStoreIndex
-from llama_index.core.retrievers.auto_merging import AutoMergingRetriever
+from llama_index.core.retrievers import (
+    AutoMergingRetriever,
+)
 from llama_index.core import StorageContext
 from llama_index.core.storage.docstore import SimpleDocumentStore
-
+from modules.advance_retriever_llama.advance_retriever_llama import lab
 def perform_auto_merging_retrieval():
     
     # Create hierarchical nodes

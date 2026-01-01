@@ -1,12 +1,17 @@
 from modules.advance_retriever_llama.data import get_sample_documents
 from llama_index.core.node_parser import SentenceSplitter
-from llama_index.core import Document, Settings
-from llama_index.core import VectorStoreIndex
-from llama_index.core import DocumentSummaryIndex
+
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.anthropic import Anthropic
 from dotenv import load_dotenv
 import os
+from llama_index.core import (
+    VectorStoreIndex, 
+    Document,
+    Settings,
+    DocumentSummaryIndex,
+    KeywordTableIndex
+)
 
 class AdvancedRetrieversLab:
     def __init__(self):

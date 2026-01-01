@@ -21,7 +21,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-import config
+from config import config
 
 def process_linkedin(linkedin_url, api_key=None, mock=False):
     """
